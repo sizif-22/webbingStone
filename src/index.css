@@ -1,7 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ :root {
+    --primary:#432663;
+    --secondary:#ee614f;
+}
 body {
     background-color: #eee;
+}
+.header-btns:hover  {
+    color:var(--secondary);
 }
