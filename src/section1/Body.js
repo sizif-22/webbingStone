@@ -7,7 +7,7 @@ const Body = () => {
                     <button className="px-5 py-2 bg-red-900 self-center">Our Services</button>
                 </div>
                 <div className=" items-center flex p-4 justify-center flex-col h-screen gap-4">
-                    <img src="https://webbingstone.com/wp-content/uploads/2024/05/webbingstone_video_May24-C2.webp" loading="lazy" height={270} width={480}/>
+                    <img src="https://webbingstone.com/wp-content/uploads/2024/05/webbingstone_video_May24-C2.webp" alt="webbingStone video" loading="lazy" height={270} width={480}/>
                 </div>
         </div>
     )
