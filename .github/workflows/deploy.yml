@@ -23,7 +23,7 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Check build folder
+      - name: List files in the build folder
         run: ls -l build
 
   deploy:
