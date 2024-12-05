@@ -1,3 +1,4 @@
+import placehoder from "../assets/elementor-placeholder-image.webp";
 const Body = () => {
     return (
       <div className="grid grid-cols-2">
@@ -19,14 +20,13 @@ const Body = () => {
           </button>
         </div>
         <div className="items-center flex p-4 justify-center flex-col h-screen gap-4">
-          <img
-            src="https://webbingstone.com/wp-content/uploads/2024/05/optimized_image.webp"
+        <img
+            src="https://webbingstone.com/wp-content/uploads/optimized_image.webp"
+            onerror="this.onerror=null;this.src='https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png';"
             alt="webbingStone video"
             height="270"
             width="480"
-            loading="eager"
-            fetchpriority="high"
-          />
+            />
         </div>
       </div>
     );
