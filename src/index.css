@@ -11,3 +11,19 @@ body {
 .header-btns:hover  {
     color:var(--secondary);
 }
+.blur-load {
+    background-image: url(https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png);
+    background-size: cover;
+    background-position: center;
+}
+.the-gif {
+    object-position:center ;
+    background-position: center;
+}
+.blur-load.loaded > img {
+    opacity: 1;
+}
+.blur-load > img {
+    opacity: 0;
+    transition:opacity 500ms ease-in-out;
+}
