@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import Button from "../components/Button";
 
 const Body = () => {
   const blurRef = useRef();
@@ -38,26 +39,26 @@ const Body = () => {
           with notable clients, such as Fujifilm and the Ministry of Tourism in
           Egypt, showcasing our ability to handle diverse industries.
         </p>
-        <button className="px-5 py-2 bg-red-900 self-center text-white">
-          Our Services
-        </button>
+        <div className="flex justify-center">
+          <Button name={"Our Services"} link={"https://webbingstone.com/services-webbingstone/"} />
+        </div>
       </div>
 
       {/* Right Section */}
       <div className="items-center md:flex p-4 justify-center flex-col h-screen gap-4 hidden">
         <div ref={blurRef} className="blur-load h-[270px] w-[480px]">
-          <picture className="object-contain the-gif h-[270px]">
+          <picture>
             <source
               srcSet="https://webbingstone.com/wp-content/uploads/2024/05/webbingstone_video_May24-C2.webp"
               media="(min-width:760px)"
             />
-              <img
-                ref={imgRef}
-                src=""
-                alt="webbingStone video"
-                loading="lazy"
-                className="object-contain the-gif h-[270px]"
-              />
+            <img
+              ref={imgRef}
+              src=""
+              alt="webbingStone video"
+              loading="lazy"
+              className="object-contain lazy-loaded-img h-[270px]"
+            />
           </picture>
         </div>
       </div>

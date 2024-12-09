@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-.the-gif {
+.lazy-loaded-img {
   object-position: center;
   background-position: center;
 }
