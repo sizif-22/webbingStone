@@ -1,18 +1,16 @@
 {
   "files": {
     "main.css": "/webbingStone/static/css/main.18ce32d9.css",
-    "main.js": "/webbingStone/static/js/main.d4702958.js",
+    "main.js": "/webbingStone/static/js/main.c489b432.js",
     "static/js/453.ad333f79.chunk.js": "/webbingStone/static/js/453.ad333f79.chunk.js",
-    "static/media/webbing-stone-logo-2x.webp": "/webbingStone/static/media/webbing-stone-logo-2x.0ebba0a0fe5ad8d5e85d.webp",
-    "static/media/webbing-stone-logo.webp": "/webbingStone/static/media/webbing-stone-logo.08b5f14b695660acd5e9.webp",
     "static/media/elementor-placeholder-image.webp": "/webbingStone/static/media/elementor-placeholder-image.aadba29c0fa8fe2da964.webp",
     "index.html": "/webbingStone/index.html",
     "main.18ce32d9.css.map": "/webbingStone/static/css/main.18ce32d9.css.map",
-    "main.d4702958.js.map": "/webbingStone/static/js/main.d4702958.js.map",
+    "main.c489b432.js.map": "/webbingStone/static/js/main.c489b432.js.map",
     "453.ad333f79.chunk.js.map": "/webbingStone/static/js/453.ad333f79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18ce32d9.css",
-    "static/js/main.d4702958.js"
+    "static/js/main.c489b432.js"
   ]
 }
