@@ -7,7 +7,6 @@ const Section1 = ()=>{
             <PreHeader/>
             <hr className="border-primary"/>
             <Header/>
-            <hr className=" border-[#00000025]"/>
             <Body/>
         </div>
     );
