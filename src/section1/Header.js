@@ -39,12 +39,12 @@ const Header = () => {
 
         <div className="flex items-center gap-4 ">
           <IoSearch className="text-2xl text-secondary hover:text-primary md:hidden block" />
-          <div className="hidden md:flex items-center gap-7 text-primary font-bold px-10 py-2">
+          <div className="hidden md:flex items-center gap-7 text-primary font-bold text-lg px-10 py-2">
             {menuItems.map((item, index) =>
               index === 0 ? (
                 <button
                   key={index}
-                  className="text-secondary"
+                  className="text-[#ba3d1b]"
                   onClick={() => navigateTo(item.path)}
                 >
                   {item.label}
