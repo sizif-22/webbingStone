@@ -38,6 +38,7 @@ const BlogCard = ({
             ref={imgRef}
             src={image}
             alt={title}
+            loading="lazy"
             className="w-full h-60 rounded-md object-cover lazy-loaded-img"
           />
         </div>

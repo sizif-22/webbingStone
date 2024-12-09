@@ -6,7 +6,7 @@ const PreHeader = () => {
     return (
         <div className="flex items-center justify-between md:px-10 ">
       <div className="flex">
-        <p className="flex items-center gap-1 px-4 py-3 cursor-pointer hover:text-secondary">
+        <p className="flex items-center gap-1 px-4 py-3 cursor-pointer md:hover:text-secondary">
           <CiMail /> info@webbingstone.com
         </p>
         <p className="md:flex hidden items-center gap-1 px-4 py-3">
