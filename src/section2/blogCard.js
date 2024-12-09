@@ -44,10 +44,10 @@ const BlogCard = ({
 
         {/* Date */}
         <div className="absolute top-2 right-2 flex flex-col items-center shadow-md">
-          <span className="bg-white text-[#FF6C01] rounded-t-md px-2 py-1 text-center text-lg font-bold w-10">
+          <span className="bg-white text-secondary rounded-t-md px-2 py-1 text-center text-lg font-bold w-10">
             {day}
           </span>
-          <span className="bg-[#FF6C01] text-white rounded-b-md px-2 py-1 text-center text-xs font-semibold uppercase max-w-10">
+          <span className="bg-secondary text-white rounded-b-md px-2 py-1 text-center text-xs font-semibold uppercase max-w-10">
             {month}
           </span>
         </div>
@@ -56,7 +56,7 @@ const BlogCard = ({
       {/* Content Section */}
       <div className="p-4">
         <p className="text-sm text-gray-600 mb-1">
-          By <span className="text-[#FF6C01] font-bold">{author}</span>
+          By <span className="text-secondary font-bold">{author}</span>
         </p>
         <h2 className="text-lg font-bold text-gray-800 mb-2">{title}</h2>
         <p className="text-gray-700 text-sm mb-4">{content}</p>

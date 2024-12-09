@@ -40,14 +40,17 @@ const Body = () => {
           Egypt, showcasing our ability to handle diverse industries.
         </p>
         <div className="flex justify-center">
-          <Button name={"Our Services"} link={"https://webbingstone.com/services-webbingstone/"} />
+          <Button
+            name={"Our Services"}
+            link={"https://webbingstone.com/services-webbingstone/"}
+          />
         </div>
       </div>
 
       {/* Right Section */}
       <div className="items-center md:flex p-4 justify-center flex-col h-screen gap-4 hidden">
         <div ref={blurRef} className="blur-load h-[270px] w-[480px]">
-          <picture>
+          <picture className="object-contain lazy-loaded-img h-[270px]">
             <source
               srcSet="https://webbingstone.com/wp-content/uploads/2024/05/webbingstone_video_May24-C2.webp"
               media="(min-width:760px)"

@@ -42,7 +42,7 @@ const BlogSection = () => {
 
   return (
     <div className="bg-[#F9F9F9] py-10">
-      <h1 className="text-center mb-12 text-3xl text-orange-500">
+      <h1 className="text-center mb-12 text-3xl text-secondary">
         Recent Blog Posts{" "}
       </h1>
       <div className="container mx-auto md:px-24">
