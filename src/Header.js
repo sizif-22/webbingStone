@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { IoSearch, IoMenuOutline, IoCloseOutline } from "react-icons/io5";
-import logo from "../assets/webbing-stone-logo.png";
-import logo2x from "../assets/webbing-stone-logo-2x.png";
-import logoWebp from "../assets/webbing-stone-logo.webp";
-import logo2xWebp from "../assets/webbing-stone-logo-2x.webp";
+import logo from "./assets/webbing-stone-logo.png";
+import logo2x from "./assets/webbing-stone-logo-2x.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,7 +30,7 @@ const Header = () => {
       <div className="flex px-4 py-2 items-center justify-between  bg-[#eee]">
         <img
           src={logo} 
-          srcSet={`${logo} 1x, ${logo2x} 2x, ${logoWebp} 1x, ${logo2xWebp} 2x`} 
+          srcSet={`${logo} 1x, ${logo2x} 2x`} 
           alt="webbingStone"
           className="h-[48px] w-[150px]"
         />
