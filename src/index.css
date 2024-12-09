@@ -1,29 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- :root {
-    --primary:#432663;
-    --secondary:#BA3D1B;
+:root {
+  --primary: #432663;
+  --secondary: #ba3d1b;
 }
 body {
-    background-color: #eee;
+  background-color: #eee;
 }
-.header-btns:hover  {
-    color:var(--secondary);
+.header-btns:hover {
+  color: var(--secondary);
 }
 .blur-load {
-    background-image: url(https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png);
-    background-size: cover;
-    background-position: center;
+  background-image: url(./assets/elementor-placeholder-image.webp);
+  background-size: cover;
+  background-position: center;
 }
 .the-gif {
-    object-position:center ;
-    background-position: center;
+  object-position: center;
+  background-position: center;
 }
 .blur-load.loaded > img {
-    opacity: 1;
+  opacity: 1;
 }
 .blur-load > img {
-    opacity: 0;
-    transition:opacity 500ms ease-in-out;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
 }
