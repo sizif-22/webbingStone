@@ -28,3 +28,13 @@ body {
   opacity: 0;
   transition: opacity 400ms ease-in-out;
 }
+
+.section3Btns button {
+  width: 180px;
+  height: 40px;
+  font-family: sans-serif;
+}
+.section3Btns .activated {
+  background-color: var(--primary);
+  color: white;
+}
