@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AnimatePresence, easeIn, easeInOut, easeOut, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Section3Cards from "./Section3Cards";
 
 let sections = [
