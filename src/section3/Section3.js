@@ -49,7 +49,7 @@ const Section3 = () => {
   return (
     <div>
       <h1 className="flex justify-center py-0 font-bold text-2xl">Our Works</h1>
-      <h3 className="flex justify-center pb-5">The Digital Wizards!</h3>
+      <h2 className="flex justify-center pb-5">The Digital Wizards!</h2>
       <div className="section3Btns flex gap-2 justify-center items-center">
         <button
           onClick={() => handleButtonClick("web")}
