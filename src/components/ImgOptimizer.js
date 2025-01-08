@@ -23,7 +23,7 @@ const ImgOptimizer = ({imgSrc, imgAlt, customCSSClasses, parentClasses })=>{
             src = {imgSrc}
             alt={imgAlt}
             loading="lazy"
-            className={`object-cover lazy-loaded-img h-full ${customCSSClasses}`}
+            className={`object-cover lazy-loaded-img h-full w-full ${customCSSClasses}`}
           />
         </div>
     );
