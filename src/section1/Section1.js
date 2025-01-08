@@ -28,11 +28,12 @@ const Section1 = () => {
 
       {/* Right Section */}
       <div className="items-center md:flex p-4 justify-center flex-col gap-4 hidden">
-        <ImgOptimizer
-          imgSrc="https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&"
-          imgAlt="webbingStone video"
-          parentClasses={"w-[500px] h-[200]"}
-        />
+        <div className="w-[500px] h-[200]">
+          <ImgOptimizer
+            imgSrc="https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&"
+            imgAlt="webbingStone video"
+          />
+        </div>
       </div>
     </div>
   );
