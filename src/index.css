@@ -38,3 +38,7 @@ body {
   background-color: var(--primary);
   color: white;
 }
+
+/* .section3Card:hover .absolute {
+  display: flex;
+} */

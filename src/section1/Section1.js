@@ -1,24 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Button from "../components/Button";
+import ImgOptimizer from "../components/ImgOptimizer";
 const Section1 = () => {
-  const blurRef = useRef();
-  const imgRef = useRef();
-  useEffect(() => {
-    const imgElement = imgRef.current;
-    function handleImageLoad() {
-      blurRef.current.classList.add("loaded");
-    }
-    if (imgElement.complete) {
-      blurRef.current.classList.add("loaded");
-    } else {
-      imgElement.addEventListener("load", handleImageLoad);
-      return () => {
-        imgElement.removeEventListener("load", handleImageLoad);
-      };
-    }
-  }, []);
   return (
-    <div className="md:grid grid-cols-2 h-fit">
+    <div className="md:grid grid-cols-2 py-32">
       {/* Left Section */}
       <div className="flex p-4 justify-center flex-col gap-10">
         <h1 className="font-bold text-4xl">
@@ -42,16 +27,12 @@ const Section1 = () => {
       </div>
 
       {/* Right Section */}
-      <div className="items-center md:flex p-4 justify-center flex-col h-screen gap-4 hidden">
-        <div ref={blurRef} className="blur-load h-[270px] w-[480px]">
-          <img
-            ref={imgRef}
-            src="https://webbingstone.com/wp-content/uploads/2024/05/webbingstone_video_May24-C2.webp "
-            alt="webbingStone video"
-            loading="lazy"
-            className="object-contain lazy-loaded-img h-[270px]"
-          />
-        </div>
+      <div className="items-center md:flex p-4 justify-center flex-col gap-4 hidden">
+        <ImgOptimizer
+          imgSrc="https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&"
+          imgAlt="webbingStone video"
+          customCSSClasses={"w-[500px] h-[200]"}
+        />
       </div>
     </div>
   );

@@ -6,33 +6,33 @@ let sections = [
   {
     title: "web",
     cards: [
-      { title: "Web 1", imgUrl: "", link: "", color: "red" },
-      { title: "Web 2", imgUrl: "", link: "", color: "blue" },
-      { title: "Web 3", imgUrl: "", link: "", color: "green" },
+      { title: "Web 1", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Web 2", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Web 3", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
     ],
   },
   {
     title: "digital",
     cards: [
-      { title: "Digital 1", imgUrl: "", link: "", color: "orange" },
-      { title: "Digital 2", imgUrl: "", link: "", color: "purple" },
-      { title: "Digital 3", imgUrl: "", link: "", color: "pink" },
+      { title: "Digital 1", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Digital 2", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Digital 3", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
     ],
   },
   {
     title: "mobile",
     cards: [
-      { title: "Mobile 1", imgUrl: "", link: "", color: "yellow" },
-      { title: "Mobile 2", imgUrl: "", link: "", color: "teal" },
-      { title: "Mobile 3", imgUrl: "", link: "", color: "brown" },
+      { title: "Mobile 1", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Mobile 2", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Mobile 3", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
     ],
   },
   {
     title: "motion",
     cards: [
-      { title: "Motion 1", imgUrl: "", link: "", color: "cyan" },
-      { title: "Motion 2", imgUrl: "", link: "", color: "magenta" },
-      { title: "Motion 3", imgUrl: "", link: "", color: "lime" },
+      { title: "Motion 1", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Motion 2", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
+      { title: "Motion 3", imgUrl: "https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&", link: "#" },
     ],
   },
 ];
@@ -76,7 +76,7 @@ const Section3 = () => {
           MOTION GRAPHICS
         </button>
       </div>
-      <div className="p-5 flex justify-center gap-6 items-center">
+      <div className="p-10 flex justify-center gap-10 items-center">
         <AnimatePresence key={animationKey}>
           {sections
             .find((section) => section.title === activeBTN)
@@ -92,7 +92,6 @@ const Section3 = () => {
                   title={card.title}
                   imgUrl={card.imgUrl}
                   link={card.link}
-                  color={card.color}
                 />
               </motion.div>
             ))}

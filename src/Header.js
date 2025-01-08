@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 border-b border-[#00000025]">
+    <div className="sticky top-0 border-b z-20 border-[#00000025]">
       <div className="flex px-4 py-2 items-center justify-between  bg-[#eee]">
         <img
           src={logo} 

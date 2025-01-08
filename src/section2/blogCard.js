@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
+import ImgOptimizer from "../components/ImgOptimizer";
 
 const BlogCard = ({
   image,
@@ -9,39 +10,16 @@ const BlogCard = ({
   content,
   readMoreLink,
 }) => {
-  const blurRef = useRef();
-  const imgRef = useRef();
-
-  useEffect(() => {
-    const imgElement = imgRef.current;
-
-    function handleImageLoad() {
-      blurRef.current.classList.add("loaded");
-    }
-
-    if (imgElement.complete) {
-      blurRef.current.classList.add("loaded");
-    } else {
-      imgElement.addEventListener("load", handleImageLoad);
-
-      return () => {
-        imgElement.removeEventListener("load", handleImageLoad);
-      };
-    }
-  }, []);
   return (
     <div className="bg-white shadow-lg rounded-lg max-w-xs mx-auto overflow-hidden">
       {/* Image Section */}
       <div className="relative mx-4 mt-4">
-        <div ref={blurRef} className="blur-load">
-          <img
-            ref={imgRef}
-            src={image}
-            alt={title}
-            loading="lazy"
-            className="w-full h-60 rounded-md object-cover lazy-loaded-img"
-          />
-        </div>
+        <ImgOptimizer
+          imgSrc={image}
+          imgAlt={title}
+          customCSSClasses={"object-cover lazy-loaded-img h-60 rounded-md"}
+          parentClasses={"rounded-md"}
+        />
 
         {/* Date */}
         <div className="absolute top-2 right-2 flex flex-col items-center shadow-md">
