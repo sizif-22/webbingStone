@@ -40,7 +40,7 @@ const Section1 = () => {
       {/* Right Section */}
       <div className="items-center md:flex justify-center flex-col gap-4 hidden">
         <ImgOptimizer
-          imgSrc="https://cdn.discordapp.com/attachments/1326598267860947025/1326599144898429000/milky-way-5295160.jpg?ex=6780033b&is=677eb1bb&hm=da3de511bcc7c9ea708f95e74b1d254b17e42c1fd8392646941318b259e9555f&"
+          imgSrc="https://firebasestorage.googleapis.com/v0/b/m4-tazkarti.appspot.com/o/profileImgs%2Fai-generated-8411649.png?alt=media&token=026104f4-5942-45bf-be34-1e26fc2c5cd8"
           imgAlt="webbingStone video"
           customCSSClasses={""}
           parentClasses={"w-[500px] h-[300px]"}
